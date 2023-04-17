@@ -23,7 +23,7 @@ void Simulation::event_driven_simulation(QVector<QMap<QString, size_t>> primary_
 
         QString inputVectror{};
         for (auto input = primary_inputs[i].begin(); input != primary_inputs[i].end(); ++input) {
-            inputVectror += input.key() + " : " + QString::number(input.value()); // + "/n"
+            inputVectror += input.key() + " : " + QString::number(input.value()) + " "; // + "/n"
         }
         m_output->push_back("Input vector");
         m_output->push_back(inputVectror);
